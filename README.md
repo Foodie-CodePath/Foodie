@@ -14,35 +14,30 @@ The following **required** functionality is completed:
 
 ## Foodie Requirements
 
-## User Account:
-- [ ] User can sign up to create a new account using Parse authentication
-- [ ] User can log in and log out of his or her account
+### User Account:
+- [ ] User can sign up to create a new account for Restaruant or User, using Parse authentication
+- [ ] User/ REstaruant can log in and log out of his or her account
 - [ ] The current signed in user is persisted across app restarts
-
-- [ ] User Profiles:
 - [ ] A log in credential is requiered from either Twitter/Facebook/Instagram
+ 
+### User Profiles:
 - [ ] Allow the logged in user to add a profile photo
+- [ ] The Loyaity program that user join
+- [ ] Point history for each card 
 
-- [ ] Restaruant Search:
-- [ ] User can search for restaruant by their dishes photo
+### Restaruant Search:
+- [ ] User can search for restaruant by their dishes photo                                                                                         
 - [ ] Display pictures of food that the user desides to post
-
-- [ ] Restaruant Loyaity Program:
-
-
-- [ ] Apply filters to the photos
-- [ ] The user is able to import photos from ones personal mobile camera.
-- [ ] The user is able to tag and comment on the post
 - [ ] The user is able to enable map location of a particular restaurant
-- [ ] Each post has a link to the google maps in order for the user to check locations 
-- [ ] The app provides a history of all the restaurants the particular user has visited
-- [ ] The app has its own functional camera
 
-## Views
+### Loyaity Program:
+- [ ] Uers can present QRcoder for sacn
+- [ ] Restaruant can scan user profile and offer them point
+- [ ] User can apple and get there VIP card from the restaruant they search.
 
-- [ ] App Camera View (Opening and first view of the app)
-- [ ] Search and view of photos (left swipe)
-- [ ] Collection view of ones personal page of restaurant history and photos (right swipe)
+## Optional
+- [ ] Restaruant able to offer ondemand discount.
+- [ ] User can search for promotion
 
 ## Video Walkthrough 
 
