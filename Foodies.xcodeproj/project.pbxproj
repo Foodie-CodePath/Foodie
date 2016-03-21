@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B35220F21C9F9535005037A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B35220F11C9F9535005037A2 /* README.md */; };
 		B3C937301C90E3AC00C8D56B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9372F1C90E3AC00C8D56B /* AppDelegate.swift */; };
-		B3C937321C90E3AC00C8D56B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C937311C90E3AC00C8D56B /* ViewController.swift */; };
 		B3C937351C90E3AC00C8D56B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C937331C90E3AC00C8D56B /* Main.storyboard */; };
 		B3C937381C90E3AC00C8D56B /* Foodies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3C937361C90E3AC00C8D56B /* Foodies.xcdatamodeld */; };
 		B3C9373A1C90E3AC00C8D56B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C937391C90E3AC00C8D56B /* Assets.xcassets */; };
@@ -16,9 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B35220F11C9F9535005037A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		B3C9372C1C90E3AC00C8D56B /* Foodies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C9372F1C90E3AC00C8D56B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3C937311C90E3AC00C8D56B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3C937341C90E3AC00C8D56B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3C937371C90E3AC00C8D56B /* Foodies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Foodies.xcdatamodel; sourceTree = "<group>"; };
 		B3C937391C90E3AC00C8D56B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +37,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B35220EB1C9F93D4005037A2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		B35220EC1C9F93DA005037A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B35220ED1C9F93E0005037A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B35220EF1C9F93FB005037A2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B35220F01C9F94AE005037A2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B3C937331C90E3AC00C8D56B /* Main.storyboard */,
+				B3C9373B1C90E3AC00C8D56B /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		B3C937231C90E3AC00C8D56B = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +93,14 @@
 		B3C9372E1C90E3AC00C8D56B /* Foodies */ = {
 			isa = PBXGroup;
 			children = (
+				B35220EB1C9F93D4005037A2 /* API */,
+				B35220EC1C9F93DA005037A2 /* Models */,
+				B35220EF1C9F93FB005037A2 /* View Controllers */,
+				B35220ED1C9F93E0005037A2 /* Views */,
+				B35220F01C9F94AE005037A2 /* Storyboards */,
+				B35220F11C9F9535005037A2 /* README.md */,
 				B3C9372F1C90E3AC00C8D56B /* AppDelegate.swift */,
-				B3C937311C90E3AC00C8D56B /* ViewController.swift */,
-				B3C937331C90E3AC00C8D56B /* Main.storyboard */,
 				B3C937391C90E3AC00C8D56B /* Assets.xcassets */,
-				B3C9373B1C90E3AC00C8D56B /* LaunchScreen.storyboard */,
 				B3C9373E1C90E3AC00C8D56B /* Info.plist */,
 				B3C937361C90E3AC00C8D56B /* Foodies.xcdatamodeld */,
 			);
@@ -99,7 +139,7 @@
 				TargetAttributes = {
 					B3C9372B1C90E3AC00C8D56B = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 3KE5C9Z6PH;
+						DevelopmentTeam = 46G637T2DT;
 					};
 				};
 			};
@@ -139,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C937321C90E3AC00C8D56B /* ViewController.swift in Sources */,
+				B35220F21C9F9535005037A2 /* README.md in Sources */,
 				B3C937301C90E3AC00C8D56B /* AppDelegate.swift in Sources */,
 				B3C937381C90E3AC00C8D56B /* Foodies.xcdatamodeld in Sources */,
 			);
@@ -254,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Foodies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "QingTian-Chen.Foodies";
@@ -265,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Foodies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "QingTian-Chen.Foodies";
@@ -291,6 +333,7 @@
 				B3C937431C90E3AC00C8D56B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
