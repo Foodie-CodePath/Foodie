@@ -19,21 +19,31 @@ The following **required** functionality is completed:
 - [ ] User/ REstaruant can log in and log out of his or her account
 - [ ] The current signed in user is persisted across app restarts
 - [ ] A log in credential is requiered from either Twitter/Facebook/Instagram
- 
-### User Profiles:
-- [ ] Allow the logged in user to add a profile photo
+  
+### Home
+- [ ] user can search for restaruant 
+- [ ] user can filter the restaruant
+- [ ] filter joined vs or all 
+- [ ] user can recommand restaruant join our program
+- [ ] Detail reward Page of the restaruant 
+- [ ] (User can search for restaruant by their dishes photo)?  
+
+### Nearby
+- [ ] MapView
+- [ ] 
+
+### 
+
+###
+- [ ] add a profile picture of the user and restaurant 
 - [ ] The Loyaity program that user join
 - [ ] Point history for each card 
-
-### Restaruant Search:
-- [ ] User can search for restaruant by their dishes photo                                                                                         
-- [ ] Display pictures of food that the user desides to post
-- [ ] The user is able to enable map location of a particular restaurant
 
 ### Loyaity Program:
 - [ ] Uers can present QRcoder for sacn
 - [ ] Restaruant can scan user profile and offer them point
 - [ ] User can apple and get there VIP card from the restaruant they search.
+- [ ] reach level with pokemon sound
 
 ## Optional
 - [ ] Restaruant able to offer ondemand discount.
