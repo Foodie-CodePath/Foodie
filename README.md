@@ -29,15 +29,15 @@ The following **required** functionality is completed:
 ### Nearby
 - [ ] user MapView to show near by store with Loyaity Program
 
-###
+### Me
 - [ ] add a profile picture of the user and restaurant 
-- [ ] The Loyaity program that user join
+- [ ] Show Loyaity program that user join and it's Point
 - [ ] Point history for each card 
 
 ### Loyaity Program:
 - [ ] Uers can present QRcoder for sacn
 - [ ] Restaruant can scan user profile and offer them point
-- [ ] User can apple and get there VIP card from the restaruant they search.
+- [ ] User can apply and get there VIP card from the restaruant they search.
 - [ ] reach level with pokemon sound
 
 ## Optional
