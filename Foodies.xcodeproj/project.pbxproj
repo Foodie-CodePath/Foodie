@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9927D96487C816301C7F02F5 /* Pods_Foodies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11212746AEB339174BBB92A3 /* Pods_Foodies.framework */; };
+		B333FCCA1CA58FDD001254AD /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333FCC91CA58FDD001254AD /* Client.swift */; };
+		B333FCCC1CA58FF6001254AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333FCCB1CA58FF6001254AD /* User.swift */; };
+		B333FCCE1CA59082001254AD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333FCCD1CA59082001254AD /* ProfileViewController.swift */; };
 		B35220F21C9F9535005037A2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B35220F11C9F9535005037A2 /* README.md */; };
 		B3C937301C90E3AC00C8D56B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9372F1C90E3AC00C8D56B /* AppDelegate.swift */; };
 		B3C937351C90E3AC00C8D56B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C937331C90E3AC00C8D56B /* Main.storyboard */; };
 		B3C937381C90E3AC00C8D56B /* Foodies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3C937361C90E3AC00C8D56B /* Foodies.xcdatamodeld */; };
 		B3C9373A1C90E3AC00C8D56B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C937391C90E3AC00C8D56B /* Assets.xcassets */; };
 		B3C9373D1C90E3AC00C8D56B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C9373B1C90E3AC00C8D56B /* LaunchScreen.storyboard */; };
+		B3EAAFCD1CA9D4F50012E3B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EAAFCC1CA9D4F50012E3B4 /* LoginViewController.swift */; };
+		B3EAAFCF1CA9DCA20012E3B4 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EAAFCE1CA9DCA20012E3B4 /* NearbyViewController.swift */; };
+		B3EAAFD11CA9DCBD0012E3B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EAAFD01CA9DCBD0012E3B4 /* HomeViewController.swift */; };
+		B3EAAFD51CAC8B260012E3B4 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EAAFD41CAC8B260012E3B4 /* QRCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11212746AEB339174BBB92A3 /* Pods_Foodies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA30B81FBCBCAB5F4CBF07F0 /* Pods-Foodies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foodies/Pods-Foodies.release.xcconfig"; sourceTree = "<group>"; };
+		B333FCC91CA58FDD001254AD /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		B333FCCB1CA58FF6001254AD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B333FCCD1CA59082001254AD /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B35220F11C9F9535005037A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		B3C9372C1C90E3AC00C8D56B /* Foodies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C9372F1C90E3AC00C8D56B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,11 @@
 		B3C937391C90E3AC00C8D56B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C9373C1C90E3AC00C8D56B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3C9373E1C90E3AC00C8D56B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3EAAFCC1CA9D4F50012E3B4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewController/LoginViewController.swift; sourceTree = "<group>"; };
+		B3EAAFCE1CA9DCA20012E3B4 /* NearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
+		B3EAAFD01CA9DCBD0012E3B4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B3EAAFD41CAC8B260012E3B4 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		D8303AA607C0723FF290C1FF /* Pods-Foodies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Foodies/Pods-Foodies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,15 +49,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9927D96487C816301C7F02F5 /* Pods_Foodies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28D2CAD2492CACC5DA85D4ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11212746AEB339174BBB92A3 /* Pods_Foodies.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D040487C90FC52CB2890A04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8303AA607C0723FF290C1FF /* Pods-Foodies.debug.xcconfig */,
+				AA30B81FBCBCAB5F4CBF07F0 /* Pods-Foodies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B35220EB1C9F93D4005037A2 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B333FCC91CA58FDD001254AD /* Client.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -47,6 +84,7 @@
 		B35220EC1C9F93DA005037A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B333FCCB1CA58FF6001254AD /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -61,6 +99,11 @@
 		B35220EF1C9F93FB005037A2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B3EAAFD01CA9DCBD0012E3B4 /* HomeViewController.swift */,
+				B3EAAFCE1CA9DCA20012E3B4 /* NearbyViewController.swift */,
+				B3EAAFD41CAC8B260012E3B4 /* QRCodeViewController.swift */,
+				B333FCCD1CA59082001254AD /* ProfileViewController.swift */,
+				B3EAAFCC1CA9D4F50012E3B4 /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -79,6 +122,8 @@
 			children = (
 				B3C9372E1C90E3AC00C8D56B /* Foodies */,
 				B3C9372D1C90E3AC00C8D56B /* Products */,
+				2D040487C90FC52CB2890A04 /* Pods */,
+				28D2CAD2492CACC5DA85D4ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3C937411C90E3AC00C8D56B /* Build configuration list for PBXNativeTarget "Foodies" */;
 			buildPhases = (
+				66BCF6E0DB93003278AC2413 /* Check Pods Manifest.lock */,
 				B3C937281C90E3AC00C8D56B /* Sources */,
 				B3C937291C90E3AC00C8D56B /* Frameworks */,
 				B3C9372A1C90E3AC00C8D56B /* Resources */,
+				E6FC6C010A3C1187A2805E26 /* Embed Pods Frameworks */,
+				155FB79FDD2C87466582ADA1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,13 +222,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		155FB79FDD2C87466582ADA1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Foodies/Pods-Foodies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66BCF6E0DB93003278AC2413 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6FC6C010A3C1187A2805E26 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Foodies/Pods-Foodies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B3C937281C90E3AC00C8D56B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3EAAFCD1CA9D4F50012E3B4 /* LoginViewController.swift in Sources */,
+				B333FCCE1CA59082001254AD /* ProfileViewController.swift in Sources */,
 				B35220F21C9F9535005037A2 /* README.md in Sources */,
 				B3C937301C90E3AC00C8D56B /* AppDelegate.swift in Sources */,
+				B3EAAFD51CAC8B260012E3B4 /* QRCodeViewController.swift in Sources */,
+				B333FCCA1CA58FDD001254AD /* Client.swift in Sources */,
+				B3EAAFD11CA9DCBD0012E3B4 /* HomeViewController.swift in Sources */,
+				B3EAAFCF1CA9DCA20012E3B4 /* NearbyViewController.swift in Sources */,
+				B333FCCC1CA58FF6001254AD /* User.swift in Sources */,
 				B3C937381C90E3AC00C8D56B /* Foodies.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +395,7 @@
 		};
 		B3C937421C90E3AC00C8D56B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8303AA607C0723FF290C1FF /* Pods-Foodies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -304,6 +408,7 @@
 		};
 		B3C937431C90E3AC00C8D56B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA30B81FBCBCAB5F4CBF07F0 /* Pods-Foodies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
