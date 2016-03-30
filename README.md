@@ -23,16 +23,11 @@ The following **required** functionality is completed:
 ### Home
 - [ ] user can search for restaruant 
 - [ ] user can filter the restaruant
-- [ ] filter joined vs or all 
 - [ ] user can recommand restaruant join our program
-- [ ] Detail reward Page of the restaruant 
-- [ ] (User can search for restaruant by their dishes photo)?  
+- [ ] Detailreward Page of the restaruant 
 
 ### Nearby
-- [ ] MapView
-- [ ] 
-
-### 
+- [ ] user MapView to show near by store with Loyaity Program
 
 ###
 - [ ] add a profile picture of the user and restaurant 
