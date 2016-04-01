@@ -29,6 +29,9 @@ The following **required** functionality is completed:
 ### Nearby
 - [ ] user MapView to show near by store with Loyaity Program
 
+### QRcoder
+- [ ] Generated unique QRcoder for each user
+
 ### Me
 - [ ] add a profile picture of the user and restaurant 
 - [ ] Show Loyaity program that user join and it's Point

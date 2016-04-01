@@ -6,6 +6,7 @@
 //  Copyright © 2016 QingTian Chen. All rights reserved.
 //
 
+// Show all restaruant using Foursquare/Yelp API
 import UIKit
 
 class HomeViewController: UIViewController {
