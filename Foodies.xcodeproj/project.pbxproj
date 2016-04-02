@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3B4BEBD91CB056FA00FACF40 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BEBD81CB056FA00FACF40 /* HomeTableViewCell.swift */; };
 		3B4BEBDB1CB0580A00FACF40 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BEBDA1CB0580A00FACF40 /* Restaurant.swift */; };
+		3B4BEBE01CB0685700FACF40 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BEBDF1CB0685700FACF40 /* ContainerViewController.swift */; };
+		3B4BEBE21CB06B5200FACF40 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BEBE11CB06B5200FACF40 /* SubViewController.swift */; };
 		9927D96487C816301C7F02F5 /* Pods_Foodies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11212746AEB339174BBB92A3 /* Pods_Foodies.framework */; };
 		B333FCCA1CA58FDD001254AD /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333FCC91CA58FDD001254AD /* Client.swift */; };
 		B333FCCC1CA58FF6001254AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333FCCB1CA58FF6001254AD /* User.swift */; };
@@ -29,6 +31,8 @@
 		11212746AEB339174BBB92A3 /* Pods_Foodies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4BEBD81CB056FA00FACF40 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		3B4BEBDA1CB0580A00FACF40 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		3B4BEBDF1CB0685700FACF40 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		3B4BEBE11CB06B5200FACF40 /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		AA30B81FBCBCAB5F4CBF07F0 /* Pods-Foodies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foodies/Pods-Foodies.release.xcconfig"; sourceTree = "<group>"; };
 		B333FCC91CA58FDD001254AD /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		B333FCCB1CA58FF6001254AD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -77,6 +81,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3B4BEBDE1CB0683700FACF40 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				B3EAAFD01CA9DCBD0012E3B4 /* HomeViewController.swift */,
+				3B4BEBDF1CB0685700FACF40 /* ContainerViewController.swift */,
+				3B4BEBE11CB06B5200FACF40 /* SubViewController.swift */,
+			);
+			name = HomeView;
+			sourceTree = "<group>";
+		};
 		B35220EB1C9F93D4005037A2 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +119,7 @@
 		B35220EF1C9F93FB005037A2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B3EAAFD01CA9DCBD0012E3B4 /* HomeViewController.swift */,
+				3B4BEBDE1CB0683700FACF40 /* HomeView */,
 				B3EAAFCE1CA9DCA20012E3B4 /* NearbyViewController.swift */,
 				B3EAAFD41CAC8B260012E3B4 /* QRCodeViewController.swift */,
 				B333FCCD1CA59082001254AD /* ProfileViewController.swift */,
@@ -283,12 +297,14 @@
 			files = (
 				B3EAAFCD1CA9D4F50012E3B4 /* LoginViewController.swift in Sources */,
 				B333FCCE1CA59082001254AD /* ProfileViewController.swift in Sources */,
+				3B4BEBE01CB0685700FACF40 /* ContainerViewController.swift in Sources */,
 				B35220F21C9F9535005037A2 /* README.md in Sources */,
 				B3C937301C90E3AC00C8D56B /* AppDelegate.swift in Sources */,
 				B3EAAFD51CAC8B260012E3B4 /* QRCodeViewController.swift in Sources */,
 				3B4BEBD91CB056FA00FACF40 /* HomeTableViewCell.swift in Sources */,
 				B333FCCA1CA58FDD001254AD /* Client.swift in Sources */,
 				B3EAAFD11CA9DCBD0012E3B4 /* HomeViewController.swift in Sources */,
+				3B4BEBE21CB06B5200FACF40 /* SubViewController.swift in Sources */,
 				3B4BEBDB1CB0580A00FACF40 /* Restaurant.swift in Sources */,
 				B3EAAFCF1CA9DCA20012E3B4 /* NearbyViewController.swift in Sources */,
 				B333FCCC1CA58FF6001254AD /* User.swift in Sources */,

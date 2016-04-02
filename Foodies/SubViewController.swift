@@ -1,26 +1,24 @@
 //
-//  HomeViewController.swift
+//  SubViewController.swift
 //  Foodies
 //
-//  Created by QingTian Chen on 3/28/16.
+//  Created by dong liang on 4/2/16.
 //  Copyright © 2016 QingTian Chen. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class SubViewController: UIViewController {
 
-    @IBOutlet weak var HomeSearchBar: UISearchBar!
+    @IBOutlet weak var testingLabel: UILabel!
     
-    
-    var Restaurants:Restaurant?
-    
+    var itemIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
-        
+        testingLabel.text = "yes\(itemIndex)"
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,3 +38,5 @@ class HomeViewController: UIViewController {
     */
 
 }
+
+
