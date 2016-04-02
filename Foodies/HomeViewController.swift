@@ -10,9 +10,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var HomeTableView: UITableView!
+    @IBOutlet weak var HomeSearchBar: UISearchBar!
+    
+    var Restaurants:Restaurant?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        HomeTableView.dataSource = self
+        HomeTableView.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -32,4 +40,21 @@ class HomeViewController: UIViewController {
     }
     */
 
+}
+
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = HomeTableView.dequeueReusableCellWithIdentifier("HomeTableCell", forIndexPath: indexPath) as! HomeTableViewCell
+    
+        cell.testLabel.text = "testing"
+        
+        return cell
+    }
+    
 }
