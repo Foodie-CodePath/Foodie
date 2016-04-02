@@ -10,15 +10,17 @@ import UIKit
 
 class SubViewController: UIViewController {
 
-    @IBOutlet weak var testingLabel: UILabel!
+    @IBOutlet weak var HomeTableView: UITableView!
     
     var itemIndex: Int = 0
+    var restaurants: [Restaurant]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testingLabel.text = "yes\(itemIndex)"
-        // Do any additional setup after loading the view.
+        HomeTableView.delegate = self
+        HomeTableView.dataSource = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,3 +42,18 @@ class SubViewController: UIViewController {
 }
 
 
+extension SubViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = HomeTableView.dequeueReusableCellWithIdentifier("SubViewCell", forIndexPath: indexPath) as! HomeTableViewCell
+        cell.RestaurantName.text = "Red Lobster \(indexPath.row)"
+        
+        return cell
+        
+    }
+}

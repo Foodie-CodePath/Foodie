@@ -84,6 +84,7 @@
 		3B4BEBDE1CB0683700FACF40 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				3B4BEBD81CB056FA00FACF40 /* HomeTableViewCell.swift */,
 				B3EAAFD01CA9DCBD0012E3B4 /* HomeViewController.swift */,
 				3B4BEBDF1CB0685700FACF40 /* ContainerViewController.swift */,
 				3B4BEBE11CB06B5200FACF40 /* SubViewController.swift */,
@@ -111,7 +112,6 @@
 		B35220ED1C9F93E0005037A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3B4BEBD81CB056FA00FACF40 /* HomeTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";

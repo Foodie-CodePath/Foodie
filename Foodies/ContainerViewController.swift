@@ -53,7 +53,7 @@ extension ContainerViewController: UIPageViewControllerDataSource, UIPageViewCon
         
         index += 1
         
-        if index >= 4 {
+        if index >= 3 {
             index = 0
         }
         let a = self.storyboard?.instantiateViewControllerWithIdentifier("SubViewController") as! SubViewController
@@ -70,7 +70,7 @@ extension ContainerViewController: UIPageViewControllerDataSource, UIPageViewCon
         index -= 1
         
         if index < 0 {
-            index = 3
+            index = 2
         }
         let a = self.storyboard?.instantiateViewControllerWithIdentifier("SubViewController") as! SubViewController
         

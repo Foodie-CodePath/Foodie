@@ -10,12 +10,16 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var RestaurantProfileImage: UIImageView!
+    @IBOutlet weak var RestaurantName: UILabel!
+    @IBOutlet weak var RestaurantAddress: UILabel!
     
+    var restaurant: [Restaurant]?
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        RestaurantProfileImage.image = UIImage(named: "hippo")
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
