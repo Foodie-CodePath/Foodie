@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BqT-cN-8z5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6OL-cV-Fel">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -44,11 +44,11 @@
             </objects>
             <point key="canvasLocation" x="254.5" y="1084.5"/>
         </scene>
-        <!--Item-->
+        <!--QRcode-->
         <scene sceneID="wVY-o8-ybF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3B4-kq-Xjt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="e8c-mr-UuB"/>
+                    <tabBarItem key="tabBarItem" title="QRcode" id="e8c-mr-UuB"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="O1F-Uv-ijA">
@@ -76,7 +76,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XGD-5e-oD4">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGD-5e-oD4">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </mapView>
                         </subviews>
@@ -90,15 +90,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="vr6-FV-YuJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="nearbyMapView" destination="XGD-5e-oD4" id="53R-zH-Em9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P64-Cf-fDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1246.5" y="-411.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="xMx-oe-PDb">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6OL-cV-Fel" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6OL-cV-Fel" customClass="TabBarViewController" customModule="Foodies" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Fwc-IF-CST">
@@ -106,11 +109,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="3B4-kq-Xjt" kind="relationship" relationship="viewControllers" id="bQ3-IG-lf5"/>
+                        <segue destination="Iu8-mr-wMN" kind="relationship" relationship="viewControllers" id="2If-AO-6Yr"/>
                         <segue destination="b3V-ZL-eJO" kind="relationship" relationship="viewControllers" id="C1z-Nc-1Dh"/>
+                        <segue destination="3B4-kq-Xjt" kind="relationship" relationship="viewControllers" id="bQ3-IG-lf5"/>
                         <segue destination="neQ-Cy-KlR" kind="relationship" relationship="viewControllers" id="HKt-sH-Eje"/>
                         <segue destination="wSS-jL-W2z" kind="relationship" relationship="viewControllers" id="led-BY-2cu"/>
-                        <segue destination="Iu8-mr-wMN" kind="relationship" relationship="viewControllers" id="2If-AO-6Yr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFV-c7-5AE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,11 +140,11 @@
             </objects>
             <point key="canvasLocation" x="1246.5" y="1084.5"/>
         </scene>
-        <!--Item-->
+        <!--Nearby-->
         <scene sceneID="3aI-vJ-Kmg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b3V-ZL-eJO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="nva-eJ-20G"/>
+                    <tabBarItem key="tabBarItem" title="Nearby" id="nva-eJ-20G"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dzv-JF-zSx">
@@ -157,11 +160,11 @@
             </objects>
             <point key="canvasLocation" x="752.5" y="-411.5"/>
         </scene>
-        <!--Item-->
+        <!--MyCard-->
         <scene sceneID="DX8-I4-xDd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="neQ-Cy-KlR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="4X0-7q-v8Y"/>
+                    <tabBarItem key="tabBarItem" title="MyCard" id="4X0-7q-v8Y"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zRK-zD-qeD">
@@ -197,11 +200,11 @@
             </objects>
             <point key="canvasLocation" x="1246.5" y="1873.5"/>
         </scene>
-        <!--Item-->
+        <!--Me-->
         <scene sceneID="uQU-jA-CVv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wSS-jL-W2z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="xfa-MQ-JD8"/>
+                    <tabBarItem key="tabBarItem" title="Me" id="xfa-MQ-JD8"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="22N-t1-SAs">
@@ -291,11 +294,11 @@
             </objects>
             <point key="canvasLocation" x="1246.5" y="-1170.5"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="c48-Mq-dnt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Iu8-mr-wMN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Y6i-cB-KgE"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="Y6i-cB-KgE"/>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -342,7 +345,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="171"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WYE-wp-KgP" id="7li-OT-bRj">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h5w-m1-P5u">
@@ -360,7 +363,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rat-MX-SzY">
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rat-MX-SzY">
                                                     <rect key="frame" x="231" y="117" width="56" height="30"/>
                                                     <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>

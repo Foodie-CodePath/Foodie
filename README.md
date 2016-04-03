@@ -73,6 +73,7 @@ By one-to-many relationship with loyalty reward table, it means a user can have 
 - Address
 - profile picture
 - Type(Chinese, Thai or American)
+- Location GPS
 - Loyalty program(Restaurant can have many loyalty program instances, each has an unique user)
 - Optional attribute
   - Can add more

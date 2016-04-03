@@ -21,6 +21,7 @@
 		B3C937381C90E3AC00C8D56B /* Foodies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3C937361C90E3AC00C8D56B /* Foodies.xcdatamodeld */; };
 		B3C9373A1C90E3AC00C8D56B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C937391C90E3AC00C8D56B /* Assets.xcassets */; };
 		B3C9373D1C90E3AC00C8D56B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C9373B1C90E3AC00C8D56B /* LaunchScreen.storyboard */; };
+		B3DE477F1CB0BC7000492B05 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE477E1CB0BC7000492B05 /* TabBarViewController.swift */; };
 		B3EAAFCD1CA9D4F50012E3B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EAAFCC1CA9D4F50012E3B4 /* LoginViewController.swift */; };
 		B3EAAFCF1CA9DCA20012E3B4 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EAAFCE1CA9DCA20012E3B4 /* NearbyViewController.swift */; };
 		B3EAAFD11CA9DCBD0012E3B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EAAFD01CA9DCBD0012E3B4 /* HomeViewController.swift */; };
@@ -45,6 +46,7 @@
 		B3C937391C90E3AC00C8D56B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C9373C1C90E3AC00C8D56B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3C9373E1C90E3AC00C8D56B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DE477E1CB0BC7000492B05 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B3EAAFCC1CA9D4F50012E3B4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewController/LoginViewController.swift; sourceTree = "<group>"; };
 		B3EAAFCE1CA9DCA20012E3B4 /* NearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
 		B3EAAFD01CA9DCBD0012E3B4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				B3EAAFD41CAC8B260012E3B4 /* QRCodeViewController.swift */,
 				B333FCCD1CA59082001254AD /* ProfileViewController.swift */,
 				B3EAAFCC1CA9D4F50012E3B4 /* LoginViewController.swift */,
+				B3DE477E1CB0BC7000492B05 /* TabBarViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				3B4BEBDB1CB0580A00FACF40 /* Restaurant.swift in Sources */,
 				B3EAAFCF1CA9DCA20012E3B4 /* NearbyViewController.swift in Sources */,
 				B333FCCC1CA58FF6001254AD /* User.swift in Sources */,
+				B3DE477F1CB0BC7000492B05 /* TabBarViewController.swift in Sources */,
 				B3C937381C90E3AC00C8D56B /* Foodies.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
