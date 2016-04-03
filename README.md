@@ -47,6 +47,46 @@ The following **required** functionality is completed:
 - [ ] Restaruant able to offer ondemand discount.
 - [ ] User can search for promotion
 
+
+# Database Schema
+- User Table(one-to-many relationship with Loyalty reward table)
+- Restaurant Table(One-to-many relationship with Loyalty reward table)
+- Loyalty Reward Table(many-to-one relationship with User table)
+
+### User table
+By one-to-many relationship with loyalty reward table, it means a user can have many different loyalty reward programs.
+- Username
+- Password
+- Email(Or use Email as a username)
+- Confirmation token(If a user doesn't user OAuth to sign in, we need this to confirm the user's email)
+- profile picture
+- Loyalty reward program(A user can have many loyalty program)
+- Optional attribute
+  - Date of birth
+  - Type of restaurant a user like
+  - Posts(A user can compose a post)
+  - Can add more
+
+### Resraurant Table
+- Restaurant name
+- Restaurant ID
+- Address
+- profile picture
+- Type(Chinese, Thai or American)
+- Loyalty program(Restaurant can have many loyalty program instances, each has an unique user)
+- Optional attribute
+  - Can add more
+
+### Loyalty Reward Table
+- User(who registers this program)
+- Restaurant(who provides this program)
+- Loyalty program ID
+- type of program
+  - Types we discussed in class
+- Optional attribute
+  - Can add more
+
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:

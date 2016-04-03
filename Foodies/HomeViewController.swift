@@ -11,10 +11,17 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var HomeSearchBar: UISearchBar!
+    
+    
+    var Restaurants:Restaurant?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+    
+        
     }
 
     override func didReceiveMemoryWarning() {
