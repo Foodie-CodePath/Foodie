@@ -84,12 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Foodies/AFNetworking.framework"
   install_framework "Pods-Foodies/Bolts.framework"
+  install_framework "Pods-Foodies/MBProgressHUD.framework"
   install_framework "Pods-Foodies/Parse.framework"
   install_framework "Pods-Foodies/ParseUI.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Foodies/AFNetworking.framework"
   install_framework "Pods-Foodies/Bolts.framework"
+  install_framework "Pods-Foodies/MBProgressHUD.framework"
   install_framework "Pods-Foodies/Parse.framework"
   install_framework "Pods-Foodies/ParseUI.framework"
 fi

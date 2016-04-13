@@ -6,5 +6,7 @@ use_frameworks!
 target 'Foodies' do
     pod 'Parse', :git => 'https://github.com/ParsePlatform/Parse-SDK-iOS-OSX.git'
     pod 'ParseUI'
+    pod 'AFNetworking', '~>2.5'
+    pod 'MBProgressHUD'
 end
 

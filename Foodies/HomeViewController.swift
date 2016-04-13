@@ -8,19 +8,29 @@
 
 // Show all restaruant using Foursquare/Yelp API
 import UIKit
+import Parse
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var HomeSearchBar: UISearchBar!
     
-    
-    var Restaurants:Restaurant?
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+//        let newUser = PFUser()
+//        newUser.username = "dong"
+//        newUser.password = "123"
+//        
+//        newUser.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+//            if success {
+//                print("successfully signed up")
+//
+//            } else {
+//                print("fail to signed up")
+//                print(error?.localizedDescription)
+//            }
+//        }
+        
         
     }
 

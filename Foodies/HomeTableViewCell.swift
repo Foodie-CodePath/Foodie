@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFNetworking
 
 class HomeTableViewCell: UITableViewCell {
     
@@ -14,12 +15,18 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var RestaurantName: UILabel!
     @IBOutlet weak var RestaurantAddress: UILabel!
     
-    var restaurant: [Restaurant]?
+    var restaurant: Restaurant! {
+        didSet {
+            RestaurantName.text = restaurant.name
+            RestaurantAddress.text = restaurant.address
+            RestaurantProfileImage.setImageWithURL(restaurant.imageURL!)
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        RestaurantProfileImage.image = UIImage(named: "hippo")
+//        RestaurantProfileImage.image = UIImage(named: "hippo")
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

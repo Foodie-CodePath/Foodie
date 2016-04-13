@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SubViewController: UIViewController {
 
@@ -20,6 +21,15 @@ class SubViewController: UIViewController {
         
         HomeTableView.delegate = self
         HomeTableView.dataSource = self
+        
+        Client.requestRestaurants(20, orderBy: "idNumber", success: { (restaurants: [PFObject]) in
+            self.restaurants = Restaurant.RestaurantsWithArray(restaurants)
+            print("fetch successfully")
+            self.HomeTableView.reloadData()
+        }) { (error:NSError) in
+                print(error.localizedDescription)
+                print("fetch failed")
+        }
         
     }
 
@@ -45,13 +55,17 @@ class SubViewController: UIViewController {
 extension SubViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        var count = 0
+        if let restaurants = self.restaurants {
+            count = restaurants.count
+        }
+        return count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = HomeTableView.dequeueReusableCellWithIdentifier("SubViewCell", forIndexPath: indexPath) as! HomeTableViewCell
-        cell.RestaurantName.text = "Red Lobster \(indexPath.row)"
+        cell.restaurant = self.restaurants![indexPath.row]
         
         return cell
         
