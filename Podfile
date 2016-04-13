@@ -8,5 +8,6 @@ target 'Foodies' do
     pod 'ParseUI'
     pod 'AFNetworking', '~>2.5'
     pod 'MBProgressHUD'
+    pod 'QRCode', '~> 0.5'
 end
 

@@ -25,6 +25,7 @@ class HomeTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        print()
         // Initialization code
 //        RestaurantProfileImage.image = UIImage(named: "hippo")
     }
