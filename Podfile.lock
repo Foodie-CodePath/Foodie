@@ -1,0 +1,56 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts/Tasks (1.7.0)
+  - MBProgressHUD (0.9.2)
+  - Parse (1.13.0):
+    - Bolts/Tasks (~> 1.7)
+  - ParseUI (1.2.0):
+    - Bolts/Tasks (~> 1.3)
+    - Parse (~> 1.9)
+  - QRCode (0.5)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5)
+  - MBProgressHUD
+  - Parse (from `https://github.com/ParsePlatform/Parse-SDK-iOS-OSX.git`)
+  - ParseUI
+  - QRCode (~> 0.5)
+
+EXTERNAL SOURCES:
+  Parse:
+    :git: https://github.com/ParsePlatform/Parse-SDK-iOS-OSX.git
+
+CHECKOUT OPTIONS:
+  Parse:
+    :commit: f9c5770984aa3f525606e9ac6d5047a6cd0b14f0
+    :git: https://github.com/ParsePlatform/Parse-SDK-iOS-OSX.git
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  Parse: 8fbb107f54257ddb1aee4344d076454439397c91
+  ParseUI: af2eba584799da4a9fbdac0e178662d7438b502e
+  QRCode: a249ed747aeb0f4bf5f9c58b5b001b6b3bc80073
+
+COCOAPODS: 0.39.0
