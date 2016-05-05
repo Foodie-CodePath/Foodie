@@ -11,7 +11,7 @@ import Parse
 
 class Client: NSObject {
     
-    //fetch restaurant data
+    /////////////fetch restaurant data//////////////////////////
     //@param limit The numbers of restaurant you want to fetch
     //@param orderby How you want the restaurant to be sorted
     //@param success What you do after data was fetched successfully
@@ -33,6 +33,33 @@ class Client: NSObject {
         }
     }
     
+    class func enrollCountByRestaurant() {
+        
+    }
     
-
+    //@param restaurant id in order to get the specific restaurant
+    //@param success What you do after data was fetched successfully
+    //@param failure What you do after data was NOT fetched successfully
+    class func requestRestaurantById(restaurant_id: String, success: (PFObject)->(), failure: (NSError)->()) {
+        let query = PFQuery(className: "Restaurant")
+        query.getObjectInBackgroundWithId(restaurant_id) {
+            (restaurant: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                success(restaurant!)
+            } else {
+                failure(error!)
+            }
+        }
+    }
+    
+    /////////////fetch Users data/////////////////////////////
+    
+    
+    
+    ////////////fetch loyalty program data///////////////////
+    
+    class func requesLoyaltyProgram() {
+        
+    }
+    
 }

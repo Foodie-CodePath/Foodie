@@ -23,7 +23,6 @@ class SubViewController: UIViewController {
         HomeTableView.dataSource = self
         
         Client.requestRestaurants(20, orderBy: "idNumber", success: { (restaurants: [PFObject]) in
-            print(restaurants)
             self.restaurants = Restaurant.RestaurantsWithArray(restaurants)
             print("fetch successfully")
             self.HomeTableView.reloadData()

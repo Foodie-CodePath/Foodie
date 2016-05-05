@@ -11,22 +11,25 @@ import Parse
 
 class Restaurant: NSObject {
     
-    let name: String?
-    let address: String?
-    let categories: String?
-    let idNumber: Int?
-    let latitude: Double?
-    let longitude: Double?
-    let imageURL: NSURL?
+    var name        : String?
+    var address     : String?
+    var categories  : String?
+    var idNumber    : Int?
+    var latitude    : Double?
+    var longitude   : Double?
+    var imageURL    : NSURL?
+    var enrollcounts: Int?
     
     //constructor, it takes a PFObjects as parameter and initilize restaurant object
     init(restaurantObject: PFObject) {
-        name = restaurantObject["name"] as? String
-        address = restaurantObject["address"] as? String
-        categories = restaurantObject["categories"] as? String
-        idNumber = restaurantObject["idNumber"] as? Int
-        latitude = restaurantObject["latitude"] as? Double
-        longitude = restaurantObject["longtitude"] as? Double
+        name         = restaurantObject["name"      ] as? String
+        address      = restaurantObject["address"   ] as? String
+        categories   = restaurantObject["categories"] as? String
+        idNumber     = restaurantObject["idNumber"  ] as? Int
+        latitude     = restaurantObject["latitude"  ] as? Double
+        longitude    = restaurantObject["longtitude"] as? Double
+        enrollcounts = restaurantObject["counts"    ] as? Int
+        
         //convert String to NSURL
         let imageURLString = restaurantObject["imageURL"] as? String
         if imageURLString != nil {

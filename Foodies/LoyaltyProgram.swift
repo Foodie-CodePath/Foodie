@@ -11,12 +11,22 @@ import Parse
 
 class LoyaltyProgram: NSObject {
     
-//    let restaurant: Restaurant?
-//    let programID: Int?
-//    let categories: String?
+//    var programID : Int?
+//    var points    : Int?
+//    var level     : Int?
+//    var restaurant: Restaurant?
 //    
 //    init(loyaltyProgram: PFObject) {
-//        programID = 123
+//        programID = loyaltyProgram["programID"] as? Int
+//        points = loyaltyProgram["points"] as? Int
+//        level = loyaltyProgram["level"] as? Int
+//        let restaurant_id = loyaltyProgram["restaurant_id"] as? String
+//        
+//        Client.requestRestaurantById(restaurant_id!, success: { (restaurant: PFObject) in
+//            self.restaurant = Restaurant(restaurantObject: restaurant)
+//        }) { (error: NSError) in
+//                print(error.localizedDescription)
+//        }
 //    }
 
 }
